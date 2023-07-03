@@ -21,6 +21,19 @@ app.get('/register',(req,res) =>{
     res.render('register');
 })
 
+app.get('/dashboard',(req,res)=>{
+  res.render('dashboard', { name: user.name} ) ;
+})
+
+app.get('/user_progress',(req,res)=>{
+  res.render('user_progress');
+})
+
+app.get('/active_workout',(req,res)=>{
+  res.render('active_workout');
+})
+
+
 
 app.post('/login', async(req,res)=>{
     const username = req.body.username;

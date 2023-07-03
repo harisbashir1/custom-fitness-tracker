@@ -10,45 +10,60 @@
     <header>
         <div class="user-login-container">
         <p>Welcome, <%= name %></p>
-        <a href="/" class="sign-in-button">Log out</a>
+        <a href="/" class="sign-out-button">Log out</a>
         </div>
         <h1>Workout Log Pro</h1>
     </header>
     <main>
-    <h1>Suggested for you</h1>
+    <h2>Some menu or suggestion</h2>
     <div class="suggested-workout-container">
 
         <div class="suggested-workout-item">
-            <p>(WORKOUT)</p></br></br></br></br>
-            </be>
+            <p>ITEM</p></br></br></br></br>
         </div>
 
         <div class="suggested-workout-item">
-            <p>(WORKOUT)</p></br></br></br></br>
+            <p>ITEM</p></br></br></br></br>
         </div>
 
         <div class="suggested-workout-item">
-            <p>(WORKOUT)</p></br></br></br></br>
+            <p>ITEM</p></br></br></br></br>
+        </div>
+        <div class="suggested-workout-item">
+            <p>ITEM</p></br></br></br></br>
+        </div>
+        <div class="suggested-workout-item">
+            <p>ITEM</p></br></br></br></br>
+        </div>
+        <div class="suggested-workout-item">
+            <p>ITEM</p></br></br></br></br>
         </div>
     </div>
 
     </main>
     <footer>
+
+    <div class="hidden-footer-menu">
+        <div class="hidden-footer-menu-item">
+
+        </div>
+        <div class="hidden-footer-menu-item" id="hidden-footer-menu-center-item">
+            
+        </div>
+        <div class="hidden-footer-menu-item">
+            
+        </div>
+    </div>
+
     <div class="footer-menu-container">
         <div class=footer-menu-item>
-            <p>Home</p>
+            <a href="/dashboard"><img src="/img/home-button.svg" alt="home"  class="svg-icon"></a>
         </div>
         <div class=footer-menu-item>
-            <p>Start Workout</p> 
+            <a href="/active_workout"><img src="/img/plus-button.svg" alt="new workout"  class="svg-icon" id="footer-center-icon"></a>
         </div>
-        <div class=footer-menu-item>
-            <p>Manage workouts</p>
-        </div>
-        <div class=footer-menu-item>
-            <p>Progress</p>
-        </div>
-        <div class=footer-menu-item>
-            <p>Settings?</p>
+        <div class="footer-menu-item">
+        <a href="/user_progress"><img src="/img/progress-button.svg" alt="progress" class="svg-icon"></a>
         </div>
     </div>
     </footer>

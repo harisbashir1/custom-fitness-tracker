@@ -1,7 +1,28 @@
+
+
+/*Color variables*/
+:root {
+    --primary-color: #ffffff;
+    --background-color: #1e1e1e;
+    --footer-color: rgb(0, 0, 0);
+  }
+
+
+
+
 /*-------------------------------------------------GENERIC STYLES-------------------------------------------------*/
 body {
     margin: 0;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+
 }
+
+p, h1 ,h2, h3, a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
 /*-------------------------------------------------DASHBOARD.EJS-------------------------------------------------*/
 /* HEADER*/
 .user-login-container{
@@ -9,15 +30,34 @@ body {
     justify-content: space-between;
 }
 
+.sign-out-button{
+    padding: 12px 22px;
+    background-color: var(--primary-color);
+    color: var(--footer-color);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+header {
+    margin: 3vh 4% 0% 6%;
+}
+main {
+    margin: 5vh 4% 0% 4%;
+}
+
 /* BODY */
 .suggested-workout-container {
-   border-radius: 1%;
-   padding: 1%;
-   border: 2px solid black;
+    border-radius: 1%;
+    padding: 1%;
+    border: 2px solid var(--primary-color);
 }
 
 .suggested-workout-item{
-    border: 2px solid black;
+    border: 2px solid var(--primary-color);
     border-radius: 5px;
     margin-bottom: 0.8%;
 }
@@ -27,18 +67,61 @@ body {
 
 .footer-menu-container{
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around; 
     position: fixed;
     bottom: 0;
-    width: 98%;
-    padding: 1%;
+    width: 100%;
+    background-color: var(--footer-color);
+    /* background: linear-gradient(to top, var(--footer-color),rgba(0, 0, 0, 1),rgba(0,0,0,0)); note: maybe add extra padding if used*/
+    border: none;
+    height: 90px;
+    padding-top: 10px;
 }
 
 .footer-menu-item {
-    border: 2px solid black;
-    border-radius: 5px;
+    margin-top: 10px;
 }
 
+
+.footer-menu-item img {
+    height: 45px;
+    width: 45px;
+  }
+  
+  #footer-center-icon{
+    height: 65px;
+    width: 65px;
+
+  }
+
+.svg-icon:hover {
+    fill: red;
+}
+
+  .hidden-footer-menu{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    position: fixed;
+    bottom: 105;
+    z-index: 9999;
+
+  }
+  .hidden-footer-menu-item{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  #hidden-footer-menu-center-item{
+    position: relative;
+    bottom: 25px;
+  }
+
+  
 
 
 /* -------------------------------------------------HOMEPAGE/LOGIN--------------------------------------------------- */
@@ -51,7 +134,7 @@ body {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 7px;
     width: 90%;
     padding: 2%;
@@ -75,8 +158,8 @@ width: 90%;
 .sign-in-button {
     display: inline-block;
     padding: 10px 20%;
-    background-color: #000000;
-    color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 4px;
     font-size: 16px;
@@ -85,3 +168,7 @@ width: 90%;
     text-decoration: none;
     cursor: pointer;
   }
+
+
+
+
